@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "include": [
+      "./src/**/*.*",
+      "./jest.config.ts",
+      "./tools",
+      "./scripts",
+      "./.eslintrc.js",
+      "./metro.config.js"
+    ],
+    "exclude": []
+  }
