@@ -36,7 +36,6 @@ const GLOBALS_STYLES = StyleSheet.create({
     paddingBottom: 5,
   },
   listItemsContainer: {
-    backgroundColor: lightColors.disabled,
     borderRadius:  10,
     width: '95%',
     marginLeft: 10,

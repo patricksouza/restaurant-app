@@ -1,28 +1,36 @@
 import { lightColors } from '@rneui/base';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const STYLES = StyleSheet.create({
   input: {
-    height: 40,
+    height: 50,
     margin: 12,
     borderWidth: 1,
     borderColor: lightColors.platform.ios.grey,
-    borderRadius:  10,
     color: 'black',
-    width: '90%',
+    width: '85%',
     textAlign: 'center',
+    backgroundColor: '#FFF',
   },
   disabledInput: {
-    height: 40,
+    height: 50,
     margin: 12,
     borderWidth: 1,
     borderColor: lightColors.platform.ios.grey,
-    borderRadius:  10,
     backgroundColor: '#e4e4e4',
     color: 'black',
     fontSize: 15,
-    width: '90%',
+    width: '85%',
     textAlign: 'center',
+  },
+  header: {
+    elevation: 1,
+    paddingBottom: 0,
+  },
+  divider: {
+    width: '90%',
+    margin: 20,
+    marginBottom: 0,
   },
 });
 

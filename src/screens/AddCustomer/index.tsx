@@ -16,7 +16,7 @@ function AddCustomerScreen() {
   const currentTable = 'Mesa'.concat(' ', params?.id);
   return (
     <>
-      <View style={{elevation: 1, paddingBottom: 0}}>
+      <View style={STYLES.header}>
         <HeaderGeneric isVisible={false} getChecks={(checks: any) => {}} />
         <Text h4 style={GLOBALS_STYLES.pageTitle}>
           Adicionar cliente
@@ -26,7 +26,7 @@ function AddCustomerScreen() {
         <View style={GLOBALS_STYLES.container}>
           <AlertGeneric message={3} />
           <Divider
-            style={{width: '90%', margin: 20, marginBottom: 0}}
+            style={STYLES.divider}
             color="grey"
             width={0.2}
             orientation="horizontal"
@@ -55,7 +55,7 @@ function AddCustomerScreen() {
           type="outline"
           buttonStyle={{
             borderWidth: 1,
-            borderRadius:  10,
+            borderRadius: 10,
             padding: 10,
             width: '90%',
             borderColor: darkColors.grey5,
@@ -74,7 +74,7 @@ function AddCustomerScreen() {
           type="solid"
           buttonStyle={{
             backgroundColor: darkColors.grey5,
-            borderRadius:  10,
+            borderRadius: 10,
             width: '100%',
           }}
           size="lg"
