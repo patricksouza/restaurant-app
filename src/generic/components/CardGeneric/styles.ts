@@ -1,18 +1,36 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
+import GLOBALS_STYLES from '../../styles/globals';
 
 const STYLES = StyleSheet.create({
-  cardTitle: {
-    fontSize: 15,
-    textAlign: 'center',
+  header: {
+    elevation: 1,
+    paddingBottom: 0,
   },
-  cardSubtitle: {
-    fontSize: 15,
-    textAlign: 'center',
+  pageTitle: {
+    ...GLOBALS_STYLES.pageTitle,
+  },
+  divider: {
+    width: '90%',
+    margin: 20,
+    marginBottom: 20,
+  },
+  container: {
+    ...GLOBALS_STYLES.container,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
+  cardContainer: {
+    margin: 10,
+    borderRadius: 10,
+  },
+  cardWrapper: {
+    padding: 10,
   },
   cardText: {
-    fontSize: 55,
-    fontWeight: '100',
     textAlign: 'center',
+    color: '#555',
+    fontSize: 35
   },
 });
 

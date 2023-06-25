@@ -28,7 +28,7 @@ export const CONSTANTS = {
       TEXT: 'A pesquisa considerará todas as mesas cadastradas.',
       ICON: 'warning',
       ICON_COLOR: 'black',
-      STYLE: 'infoContainer',
+      STYLE: 'warningContainer',
     },
     {
       TEXT: 'Sem resultado. Clique em limpar ou no ícone de "x" para retroceder.',

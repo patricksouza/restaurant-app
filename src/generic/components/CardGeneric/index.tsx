@@ -3,7 +3,7 @@ import GLOBALS_STYLES from '../../../generic/styles/globals';
 import {Row, Col, Grid} from 'react-native-easy-grid';
 import {Text, lightColors, Card, Icon} from '@rneui/themed';
 import STYLES from './styles';
-import {View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 
 const CardGeneric: React.FunctionComponent = props => {
@@ -91,40 +91,43 @@ const CardGeneric: React.FunctionComponent = props => {
   return (
     <ScrollView>
       <Grid>
-        <Row style={{paddingTop: 5}}>
+        <Row>
           <Col>
-            <Text style={STYLES.cardTitle}>Ocupadas</Text>
-            <Card containerStyle={GLOBALS_STYLES.cardContainer}>
-              <Text style={STYLES.cardText}>
-                {list.length - quantityTablesFilter}
-              </Text>
+            <Card
+              containerStyle={STYLES.cardContainer}
+              wrapperStyle={STYLES.cardWrapper}>
+              <Card.Title>Capacidade</Card.Title>
+              <Card.Divider />
+              <Text style={STYLES.cardText}>20</Text>
             </Card>
           </Col>
           <Col>
-            <Text style={STYLES.cardTitle}>Desocupadas</Text>
-            <Card containerStyle={GLOBALS_STYLES.cardContainer}>
-              <Text style={STYLES.cardText}>{quantityTablesFilter}</Text>
-            </Card>
-          </Col>
-          <Col>
-            <Text style={STYLES.cardTitle}>Total de mesas</Text>
-            <Card containerStyle={GLOBALS_STYLES.cardContainer}>
+            <Card
+              containerStyle={STYLES.cardContainer}
+              wrapperStyle={STYLES.cardWrapper}>
+              <Card.Title>Total de mesas</Card.Title>
+              <Card.Divider />
               <Text style={STYLES.cardText}>9</Text>
             </Card>
           </Col>
         </Row>
-
-        <Row style={{paddingTop: 35}}>
-          <Col size={4}>
-            <Text style={STYLES.cardTitle}>Capacidade de clientes</Text>
-            <Card containerStyle={GLOBALS_STYLES.cardContainer}>
-              <Text style={STYLES.cardText}>20</Text>
+        <Row>
+          <Col>
+            <Card
+              containerStyle={STYLES.cardContainer}
+              wrapperStyle={STYLES.cardWrapper}>
+              <Card.Title>Ocupadas</Card.Title>
+              <Card.Divider />
+              <Text style={STYLES.cardText}>5</Text>
             </Card>
           </Col>
-          <Col size={5}>
-            <Text style={STYLES.cardTitle}>Total de clientes</Text>
-            <Card containerStyle={GLOBALS_STYLES.cardContainer}>
-              <Text style={STYLES.cardText}>12</Text>
+          <Col>
+            <Card
+              containerStyle={STYLES.cardContainer}
+              wrapperStyle={STYLES.cardWrapper}>
+              <Card.Title>Desocupadas</Card.Title>
+              <Card.Divider />
+              <Text style={STYLES.cardText}>4</Text>
             </Card>
           </Col>
         </Row>
